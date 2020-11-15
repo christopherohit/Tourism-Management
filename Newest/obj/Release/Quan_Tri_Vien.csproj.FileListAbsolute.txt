@@ -1,0 +1,5 @@
+D:\Lesson\RIT\C #\Winform\Newest\Newest\obj\Release\Quan_Tri_Vien.csprojAssemblyReference.cache
+D:\Lesson\RIT\C #\Winform\Newest\Newest\obj\Release\Newest.Properties.Resources.resources
+D:\Lesson\RIT\C #\Winform\Newest\Newest\obj\Release\Quan_Tri_Vien.SignUp_Form.resources
+D:\Lesson\RIT\C #\Winform\Newest\Newest\obj\Release\Quan_Tri_Vien.csproj.GenerateResource.cache
+D:\Lesson\RIT\C #\Winform\Newest\Newest\obj\Release\Quan_Tri_Vien.csproj.CoreCompileInputs.cache

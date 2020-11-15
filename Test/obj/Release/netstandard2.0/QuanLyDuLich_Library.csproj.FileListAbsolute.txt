@@ -1,0 +1,4 @@
+D:\Lesson\RIT\C #\Winform\Newest\Test\obj\Release\netstandard2.0\QuanLyDuLich_Library.csprojAssemblyReference.cache
+D:\Lesson\RIT\C #\Winform\Newest\Test\obj\Release\netstandard2.0\QuanLyDuLich_Library.AssemblyInfoInputs.cache
+D:\Lesson\RIT\C #\Winform\Newest\Test\obj\Release\netstandard2.0\QuanLyDuLich_Library.AssemblyInfo.cs
+D:\Lesson\RIT\C #\Winform\Newest\Test\obj\Release\netstandard2.0\QuanLyDuLich_Library.csproj.CoreCompileInputs.cache
