@@ -92,7 +92,7 @@ namespace Newest
         // Container For use to put out data to file 
         public void SaveCompleteOrders(Order order)
         {
-            string filepath = @"D:\Lesson\RIT\C #\Winform\Newest\DataCustomer(HistoryWork)\CompleteOrders.docx";
+            string filepath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, @"Newest\DataCustomer(HistoryWork)\CompleteOrders.docx");
 
             using (var wr = new StreamWriter(filepath))
             {
@@ -134,7 +134,7 @@ namespace Newest
          */
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string path = @"D:\Lesson\RIT\C #\Winform\Newest\DocumentsForHelp\ChiTietPhanMem.docx";
+            string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, @"Newest\DocumentsForHelp\ChiTietPhanMem.docx");
 
             // Check File If It doesn't exist
             if (!File.Exists(path))
@@ -524,7 +524,7 @@ namespace Newest
 
         private void globallyForQuestionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string path = @"D:\Lesson\RIT\C #\Winform\Newest\DocumentsForHelp\Question.txt";
+            string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, @"Newest\DocumentsForHelp\Question.txt");
 
             // Check File If It doesn't exist
             if (!File.Exists(path))
@@ -585,7 +585,7 @@ namespace Newest
 
         private void privacyAndLiceneseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string path = @"D:\Lesson\RIT\C #\Winform\Newest\DocumentsForHelp\License.txt";
+            string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, @"Newest\DocumentsForHelp\License.txt");
 
             // Check File If It doesn't exist
             if (!File.Exists(path))

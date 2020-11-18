@@ -9,19 +9,19 @@ namespace QuanLyDuLich_Library.DAL
 {
     public class Dao
     {
-        VietTravel store;
+        VietTravel GetVietTravel;
         const string filepath = "store.bin";
-        string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, @"Quan_Tri_Vien\bin\Debug");
+        string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, @"D:\Lesson\RIT\C #\Winform\Newest\Newest\bin");
         public Dao(VietTravel store)
         {
-            this.store = store;
+            this.GetVietTravel = store;
         }
         public void Save()
         {
             using (Stream stream = File.Create(path + filepath))
             {
                 var serializer = new BinaryFormatter();
-                serializer.Serialize(stream, store);
+                serializer.Serialize(stream, GetVietTravel);
             }
         }
         public void Load()
@@ -37,10 +37,10 @@ namespace QuanLyDuLich_Library.DAL
                 var serializer = new BinaryFormatter();
                 VietTravel st = (VietTravel)serializer.Deserialize(stream);
 
-                Copy(st.Agencies, store.Agencies);
-                Copy(st.Clients , store.Clients);
-                Copy(st.Admins, store.Admins);
-                Copy(st.Orders, store.Orders);
+                Copy(st.Agencies, GetVietTravel.Agencies);
+                Copy(st.Clients , GetVietTravel.Clients);
+                Copy(st.Admins, GetVietTravel.Admins);
+                Copy(st.Orders, GetVietTravel.Orders);
             }
 
 

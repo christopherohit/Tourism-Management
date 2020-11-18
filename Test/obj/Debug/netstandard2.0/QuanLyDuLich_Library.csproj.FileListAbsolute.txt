@@ -7,3 +7,12 @@ D:\Lesson\RIT\C #\Winform\Newest\Test\bin\Debug\netstandard2.0\QuanLyDuLich_Libr
 D:\Lesson\RIT\C #\Winform\Newest\Test\bin\Debug\netstandard2.0\QuanLyDuLich_Library.pdb
 D:\Lesson\RIT\C #\Winform\Newest\Test\obj\Debug\netstandard2.0\QuanLyDuLich_Library.dll
 D:\Lesson\RIT\C #\Winform\Newest\Test\obj\Debug\netstandard2.0\QuanLyDuLich_Library.pdb
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Test\bin\Debug\netstandard2.0\QuanLyDuLich_Library.deps.json
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Test\bin\Debug\netstandard2.0\QuanLyDuLich_Library.dll
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Test\bin\Debug\netstandard2.0\QuanLyDuLich_Library.pdb
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Test\obj\Debug\netstandard2.0\QuanLyDuLich_Library.csprojAssemblyReference.cache
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Test\obj\Debug\netstandard2.0\QuanLyDuLich_Library.AssemblyInfoInputs.cache
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Test\obj\Debug\netstandard2.0\QuanLyDuLich_Library.AssemblyInfo.cs
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Test\obj\Debug\netstandard2.0\QuanLyDuLich_Library.csproj.CoreCompileInputs.cache
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Test\obj\Debug\netstandard2.0\QuanLyDuLich_Library.dll
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Test\obj\Debug\netstandard2.0\QuanLyDuLich_Library.pdb

@@ -1,4 +1,4 @@
-﻿namespace Quan_Tri_Vien
+﻿namespace Newest
 {
     partial class SignUp_Form
     {

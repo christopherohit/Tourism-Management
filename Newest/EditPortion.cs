@@ -24,7 +24,12 @@ namespace Newest
                 "Cairo", "Bangkok","New York","Budapest","London", "Paris",
                 "Berlin", "Gdansk", "Talin", "Beijing", "Rio de Janeiro", 
                 "Affins", "Larnaca", "Sharm El Sheikh", "Vienna", "Amsterdam",
-                "Odessa", "St. Petersburg", "Moscow", "Lviv", "Sydney"
+                "Odessa", "St. Petersburg", "Moscow", "Lviv", "Sydney","Kyoto" ,"Seol",
+                "Vernice", "Coron","Mauritius" , "Mandalay" ,"Isetwald" ,"Sigriswil Urban",
+                "Grindelwald" , "Obwalden" , "Zurich" , "Jeju Island" , "Zanzibar" , "Labadee",
+                "Mozambique","Cusco" , "Oku Mountain" , "Kilimanjaro" , "Fatucama Peninsula" , 
+                "Inhambane" , "Misti Volcano" , "Bazaruto Island" , "Titicaca Lake" ,"Serengeti",
+                "Petrovaradin" , "Maputo Church" , "Kalemegdan","Skadarlija" , "Maria Cathedral"
             };
 
             List<string> tinhtrang = new List<string>()
@@ -197,10 +202,11 @@ namespace Newest
             {
                 TripPicBox.BackColor = Color.Red;
                 MessageBox.Show("You didn't choose any picture","Error" , MessageBoxButtons.OK , MessageBoxIcon.Error);
-                string filepath = @"D:\Lesson\RIT\C #\Winform\Newest\QuanLyDuLich\Moutain\191346.jpg";
-                using (var wr = new StreamReader(filepath))
+                const string file = "1431632.jpg";
+                string filepath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, @"Newest\QuanLyDuLich\Moutain\");
+                using (Stream stream = File.OpenRead(filepath + file))
                 {
-
+                    
                 }
                 TripPicBox.BackColor = Color.White;
                 flag = false;

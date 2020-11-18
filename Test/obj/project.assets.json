@@ -234,11 +234,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Lesson\\RIT\\C #\\Winform\\Newest\\Test\\QuanLyDuLich_Library.csproj",
+      "projectUniqueName": "D:\\Lesson\\RIT\\C #\\Winform\\Tourism-Management\\Test\\QuanLyDuLich_Library.csproj",
       "projectName": "QuanLyDuLich_Library",
-      "projectPath": "D:\\Lesson\\RIT\\C #\\Winform\\Newest\\Test\\QuanLyDuLich_Library.csproj",
+      "projectPath": "D:\\Lesson\\RIT\\C #\\Winform\\Tourism-Management\\Test\\QuanLyDuLich_Library.csproj",
       "packagesPath": "C:\\Users\\huynh\\.nuget\\packages\\",
-      "outputPath": "D:\\Lesson\\RIT\\C #\\Winform\\Newest\\Test\\obj\\",
+      "outputPath": "D:\\Lesson\\RIT\\C #\\Winform\\Tourism-Management\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\huynh\\AppData\\Roaming\\NuGet\\NuGet.Config",

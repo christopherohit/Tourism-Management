@@ -52,12 +52,18 @@ namespace Newest
                 UserBox.Text = string.Empty;
                 UserBox.BackColor = Color.White;
             }
+            else if (PassBox.Text.Length < 6 || PassBox.Text.Length > 30)
+            {
+                PassBox.BackColor = Color.Red;
+                MessageBox.Show("The length for host don't suitable, \n it must should less than 30 and longer than 3 letter \n Please try again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                PassBox.Text = string.Empty;
+                PassBox.BackColor = Color.White;
+            }
             else
             {
                 string nickname;
-                int number;
                 int password;
-                bool isInt = int.TryParse(PassBox.Text, out number);
+                bool isInt = int.TryParse(PassBox.Text, out int number);
                 bool isIntName = int.TryParse(UserBox.Text, out number);
                 if(isIntName == true || isInt == false)
                 {
@@ -108,7 +114,39 @@ namespace Newest
 
         private void UpBut_Click(object sender, EventArgs e)
         {
-            Form form = new
+            Form form = new SignUp_Form(ref GetVietTravel);
+            form.Show();
+            this.Hide();
+        }
+
+        private void UserBox_TextChanged(object sender, EventArgs e)
+        {
+            (sender as Control).BackColor = Color.White;
+        }
+
+        private void PassBox_TextChanged(object sender, EventArgs e)
+        {
+            (sender as Control).BackColor = Color.White;
+        }
+
+        private void HelpBut_MouseHover(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello! \n Name can consist of any letters (more than 3 less than 20) \n Password has to consist ONLY of numbers (more than 6 less than 30)");
+
+        }
+
+        private void ByAdmin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var res = MessageBox.Show("Do You want to exit ?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            switch (res)
+            {
+                case DialogResult.OK:
+                    Application.Exit();
+                    break;
+                case DialogResult.Cancel:
+                    e.Cancel = true;
+                    break;
+            }
         }
     }
 }

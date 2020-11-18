@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kaGeUumLFzgSMjUUsM8VElntn3H1mBy7uZIM9vJnOi+BqVwvMjKB/ievZ+/3MtAuD9AcvEFwJDxtRK+EceTLUg==",
+  "dgSpecHash": "CeKeoGbqT3TEvhvRB4cjzvAPiBevJp+zF9lVMDd9DeiG7zXrmqlFVTx2VRkXSS0FYGjo/K24NWAOcN11Xj+8vA==",
   "success": true,
-  "projectFilePath": "D:\\Lesson\\RIT\\C #\\Winform\\Newest\\Test\\QuanLyDuLich_Library.csproj",
+  "projectFilePath": "D:\\Lesson\\RIT\\C #\\Winform\\Tourism-Management\\Test\\QuanLyDuLich_Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huynh\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\huynh\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

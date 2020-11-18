@@ -12,7 +12,7 @@ using QuanLyDuLich_Library.DAL;
 using System.Security.Cryptography;
 
 
-namespace Quan_Tri_Vien
+namespace Newest
 {
     public partial class SignUp_Form : Form
     {

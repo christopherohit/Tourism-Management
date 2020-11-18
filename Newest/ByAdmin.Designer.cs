@@ -45,6 +45,7 @@
             this.UserBox.Name = "UserBox";
             this.UserBox.Size = new System.Drawing.Size(119, 20);
             this.UserBox.TabIndex = 0;
+            this.UserBox.TextChanged += new System.EventHandler(this.UserBox_TextChanged);
             // 
             // PassBox
             // 
@@ -52,10 +53,12 @@
             this.PassBox.Name = "PassBox";
             this.PassBox.Size = new System.Drawing.Size(119, 20);
             this.PassBox.TabIndex = 1;
+            this.PassBox.TextChanged += new System.EventHandler(this.PassBox_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.Location = new System.Drawing.Point(247, 93);
             this.label1.Name = "label1";
@@ -66,6 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.Location = new System.Drawing.Point(251, 138);
             this.label2.Name = "label2";
@@ -76,6 +80,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label3.Location = new System.Drawing.Point(180, 9);
             this.label3.Name = "label3";
@@ -85,7 +90,7 @@
             // 
             // InBut
             // 
-            this.InBut.Location = new System.Drawing.Point(351, 186);
+            this.InBut.Location = new System.Drawing.Point(288, 205);
             this.InBut.Name = "InBut";
             this.InBut.Size = new System.Drawing.Size(75, 23);
             this.InBut.TabIndex = 3;
@@ -95,7 +100,7 @@
             // 
             // UpBut
             // 
-            this.UpBut.Location = new System.Drawing.Point(351, 247);
+            this.UpBut.Location = new System.Drawing.Point(405, 205);
             this.UpBut.Name = "UpBut";
             this.UpBut.Size = new System.Drawing.Size(75, 23);
             this.UpBut.TabIndex = 3;
@@ -116,11 +121,14 @@
             this.HelpBut.TabIndex = 21;
             this.HelpBut.Text = "?";
             this.HelpBut.UseVisualStyleBackColor = false;
+            this.HelpBut.MouseHover += new System.EventHandler(this.HelpBut_MouseHover);
             // 
             // ByAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 336);
             this.Controls.Add(this.HelpBut);
             this.Controls.Add(this.UpBut);
@@ -133,6 +141,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ByAdmin";
             this.Text = "Main Form Admin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ByAdmin_FormClosing);
             this.Load += new System.EventHandler(this.ByAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

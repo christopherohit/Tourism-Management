@@ -16,9 +16,10 @@ namespace Newest
         
         List<Portion> GetPortions;
         Order GetOrder;
-        public OrderInformation()
+        public OrderInformation(Order order)
         {
             InitializeComponent();
+            GetOrder = order;
         }
 
         private void OrderInformation_Load(object sender, EventArgs e)

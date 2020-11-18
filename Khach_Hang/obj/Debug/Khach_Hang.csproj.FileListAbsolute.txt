@@ -1,0 +1,4 @@
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.csprojAssemblyReference.cache
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.Properties.Resources.resources
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.csproj.GenerateResource.cache
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.csproj.CoreCompileInputs.cache
