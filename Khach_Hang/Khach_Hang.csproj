@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ShowAgency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowAgency.Designer.cs">
+      <DependentUpon>ShowAgency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowTrip.Designer.cs">
+      <DependentUpon>ShowTrip.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ShowAgency.resx">
+      <DependentUpon>ShowAgency.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +94,7 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\QuanLyDuLich_Library.Models.Portion.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
