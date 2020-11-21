@@ -87,6 +87,9 @@
     <EmbeddedResource Include="ShowAgency.resx">
       <DependentUpon>ShowAgency.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShowTrip.resx">
+      <DependentUpon>ShowTrip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>

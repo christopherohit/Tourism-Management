@@ -2,3 +2,16 @@ D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.csp
 D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.Properties.Resources.resources
 D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.csproj.GenerateResource.cache
 D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.csproj.CoreCompileInputs.cache
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\bin\Debug\Khach_Hang.exe.config
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\bin\Debug\Khach_Hang.exe
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\bin\Debug\Khach_Hang.pdb
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\bin\Debug\QuanLyDuLich_Library.dll
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\bin\Debug\System.Drawing.Common.dll
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\bin\Debug\QuanLyDuLich_Library.pdb
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.ShowAgency.resources
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.ShowTrip.resources
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.SignIn.resources
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.SignUp.resources
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.csproj.CopyComplete
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.exe
+D:\Lesson\RIT\C #\Winform\Tourism-Management\Khach_Hang\obj\Debug\Khach_Hang.pdb
