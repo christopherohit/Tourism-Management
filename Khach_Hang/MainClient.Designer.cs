@@ -32,9 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainClient));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.HelloPage = new System.Windows.Forms.TabPage();
-            this.AgencyPage = new System.Windows.Forms.TabPage();
-            this.TripPage = new System.Windows.Forms.TabPage();
-            this.OrderPage = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -46,70 +46,90 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.AgencyPage = new System.Windows.Forms.TabPage();
+            this.NameForSearch = new System.Windows.Forms.TextBox();
+            this.Undo_Butt = new System.Windows.Forms.PictureBox();
+            this.Question = new System.Windows.Forms.PictureBox();
+            this.Unrate = new System.Windows.Forms.PictureBox();
+            this.Rate = new System.Windows.Forms.PictureBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.AgencyView = new System.Windows.Forms.DataGridView();
-            this.agencyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.likesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.Undo_Butt = new System.Windows.Forms.PictureBox();
-            this.Question = new System.Windows.Forms.PictureBox();
-            this.Unrate = new System.Windows.Forms.PictureBox();
-            this.Rate = new System.Windows.Forms.PictureBox();
-            this.NameForSearch = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.portionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.agencyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label14 = new System.Windows.Forms.Label();
+            this.TripPage = new System.Windows.Forms.TabPage();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.BiggerPrice = new System.Windows.Forms.PictureBox();
+            this.LessPrice = new System.Windows.Forms.PictureBox();
+            this.less = new System.Windows.Forms.Button();
+            this.LocationsForClient = new System.Windows.Forms.DomainUpDown();
+            this.More_Butt = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.TripClientGridView = new System.Windows.Forms.DataGridView();
             this.agencyNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tripDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.onSaleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amountDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceTripDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.LocationsForClient = new System.Windows.Forms.DomainUpDown();
-            this.less = new System.Windows.Forms.Button();
-            this.More_Butt = new System.Windows.Forms.Button();
-            this.BiggerPrice = new System.Windows.Forms.PictureBox();
-            this.LessPrice = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.portionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.portionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.OrderPage = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.Compilation = new System.Windows.Forms.Button();
+            this.TotalPrice = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.DeletePortFromOrder = new System.Windows.Forms.Button();
+            this.OrderGrid = new System.Windows.Forms.DataGridView();
             this.agencyNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.locationTripDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceTripDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amountDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DeletePortFromOrder = new System.Windows.Forms.Button();
+            this.portionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.label24 = new System.Windows.Forms.Label();
+            this.UndoButtForTrips = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.HelloPage.SuspendLayout();
-            this.AgencyPage.SuspendLayout();
-            this.TripPage.SuspendLayout();
-            this.OrderPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AgencyView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agencyBindingSource)).BeginInit();
+            this.AgencyPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Undo_Butt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Question)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Unrate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgencyView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agencyBindingSource)).BeginInit();
+            this.TripPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BiggerPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LessPrice)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TripClientGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portionBindingSource)).BeginInit();
+            this.OrderPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portionBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UndoButtForTrips)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -150,60 +170,45 @@
             this.HelloPage.Text = "Greeting";
             this.HelloPage.UseVisualStyleBackColor = true;
             // 
-            // AgencyPage
+            // pictureBox1
             // 
-            this.AgencyPage.Controls.Add(this.NameForSearch);
-            this.AgencyPage.Controls.Add(this.Undo_Butt);
-            this.AgencyPage.Controls.Add(this.Question);
-            this.AgencyPage.Controls.Add(this.Unrate);
-            this.AgencyPage.Controls.Add(this.Rate);
-            this.AgencyPage.Controls.Add(this.label22);
-            this.AgencyPage.Controls.Add(this.label17);
-            this.AgencyPage.Controls.Add(this.label16);
-            this.AgencyPage.Controls.Add(this.label15);
-            this.AgencyPage.Controls.Add(this.AgencyView);
-            this.AgencyPage.Controls.Add(this.label14);
-            this.AgencyPage.Location = new System.Drawing.Point(4, 22);
-            this.AgencyPage.Name = "AgencyPage";
-            this.AgencyPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AgencyPage.Size = new System.Drawing.Size(837, 384);
-            this.AgencyPage.TabIndex = 1;
-            this.AgencyPage.Text = "Agencies";
-            this.AgencyPage.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
             // 
-            // TripPage
+            // label12
             // 
-            this.TripPage.Controls.Add(this.pictureBox5);
-            this.TripPage.Controls.Add(this.BiggerPrice);
-            this.TripPage.Controls.Add(this.LessPrice);
-            this.TripPage.Controls.Add(this.less);
-            this.TripPage.Controls.Add(this.LocationsForClient);
-            this.TripPage.Controls.Add(this.More_Butt);
-            this.TripPage.Controls.Add(this.label21);
-            this.TripPage.Controls.Add(this.label20);
-            this.TripPage.Controls.Add(this.label19);
-            this.TripPage.Controls.Add(this.label18);
-            this.TripPage.Controls.Add(this.dataGridView1);
-            this.TripPage.Location = new System.Drawing.Point(4, 22);
-            this.TripPage.Name = "TripPage";
-            this.TripPage.Padding = new System.Windows.Forms.Padding(3);
-            this.TripPage.Size = new System.Drawing.Size(837, 384);
-            this.TripPage.TabIndex = 2;
-            this.TripPage.Text = "Trip";
-            this.TripPage.UseVisualStyleBackColor = true;
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label12.Location = new System.Drawing.Point(724, 320);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(105, 23);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "VieTTravel !";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // OrderPage
+            // label4
             // 
-            this.OrderPage.Controls.Add(this.DeletePortFromOrder);
-            this.OrderPage.Controls.Add(this.dataGridView2);
-            this.OrderPage.Controls.Add(this.label24);
-            this.OrderPage.Location = new System.Drawing.Point(4, 22);
-            this.OrderPage.Name = "OrderPage";
-            this.OrderPage.Padding = new System.Windows.Forms.Padding(3);
-            this.OrderPage.Size = new System.Drawing.Size(837, 384);
-            this.OrderPage.TabIndex = 3;
-            this.OrderPage.Text = "Your Orders";
-            this.OrderPage.UseVisualStyleBackColor = true;
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.Location = new System.Drawing.Point(715, 66);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 23);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "VieTTravel !";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label29
             // 
@@ -373,109 +378,83 @@
             this.label1.Text = "Dear , Client! ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label4
+            // AgencyPage
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(715, 66);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 23);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "VieTTravel !";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.AgencyPage.Controls.Add(this.NameForSearch);
+            this.AgencyPage.Controls.Add(this.Undo_Butt);
+            this.AgencyPage.Controls.Add(this.Question);
+            this.AgencyPage.Controls.Add(this.Unrate);
+            this.AgencyPage.Controls.Add(this.Rate);
+            this.AgencyPage.Controls.Add(this.label22);
+            this.AgencyPage.Controls.Add(this.label17);
+            this.AgencyPage.Controls.Add(this.label16);
+            this.AgencyPage.Controls.Add(this.label15);
+            this.AgencyPage.Controls.Add(this.AgencyView);
+            this.AgencyPage.Controls.Add(this.label14);
+            this.AgencyPage.Location = new System.Drawing.Point(4, 22);
+            this.AgencyPage.Name = "AgencyPage";
+            this.AgencyPage.Padding = new System.Windows.Forms.Padding(3);
+            this.AgencyPage.Size = new System.Drawing.Size(837, 384);
+            this.AgencyPage.TabIndex = 1;
+            this.AgencyPage.Text = "Agencies";
+            this.AgencyPage.UseVisualStyleBackColor = true;
             // 
-            // label12
+            // NameForSearch
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label12.Location = new System.Drawing.Point(724, 320);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 23);
-            this.label12.TabIndex = 32;
-            this.label12.Text = "VieTTravel !";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.NameForSearch.Location = new System.Drawing.Point(683, 41);
+            this.NameForSearch.Name = "NameForSearch";
+            this.NameForSearch.Size = new System.Drawing.Size(148, 20);
+            this.NameForSearch.TabIndex = 40;
+            this.NameForSearch.TextChanged += new System.EventHandler(this.NameForSearch_TextChanged);
             // 
-            // pictureBox1
+            // Undo_Butt
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
+            this.Undo_Butt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Undo_Butt.Image = ((System.Drawing.Image)(resources.GetObject("Undo_Butt.Image")));
+            this.Undo_Butt.Location = new System.Drawing.Point(629, 201);
+            this.Undo_Butt.Margin = new System.Windows.Forms.Padding(2);
+            this.Undo_Butt.Name = "Undo_Butt";
+            this.Undo_Butt.Size = new System.Drawing.Size(34, 31);
+            this.Undo_Butt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Undo_Butt.TabIndex = 39;
+            this.Undo_Butt.TabStop = false;
             // 
-            // label14
+            // Question
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label14.Location = new System.Drawing.Point(5, 3);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(196, 19);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Here is your Agencies` List:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Question.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Question.Image = ((System.Drawing.Image)(resources.GetObject("Question.Image")));
+            this.Question.Location = new System.Drawing.Point(805, 5);
+            this.Question.Margin = new System.Windows.Forms.Padding(2);
+            this.Question.Name = "Question";
+            this.Question.Size = new System.Drawing.Size(27, 17);
+            this.Question.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Question.TabIndex = 38;
+            this.Question.TabStop = false;
             // 
-            // AgencyView
+            // Unrate
             // 
-            this.AgencyView.AutoGenerateColumns = false;
-            this.AgencyView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AgencyView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nameDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn,
-            this.amountDataGridViewTextBoxColumn,
-            this.likesDataGridViewTextBoxColumn,
-            this.imageDataGridViewImageColumn});
-            this.AgencyView.DataSource = this.agencyBindingSource;
-            this.AgencyView.Location = new System.Drawing.Point(9, 25);
-            this.AgencyView.Name = "AgencyView";
-            this.AgencyView.Size = new System.Drawing.Size(544, 353);
-            this.AgencyView.TabIndex = 6;
+            this.Unrate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Unrate.Image = ((System.Drawing.Image)(resources.GetObject("Unrate.Image")));
+            this.Unrate.Location = new System.Drawing.Point(683, 148);
+            this.Unrate.Margin = new System.Windows.Forms.Padding(2);
+            this.Unrate.Name = "Unrate";
+            this.Unrate.Size = new System.Drawing.Size(39, 30);
+            this.Unrate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Unrate.TabIndex = 37;
+            this.Unrate.TabStop = false;
+            this.Unrate.Click += new System.EventHandler(this.Unrate_Click);
             // 
-            // agencyBindingSource
+            // Rate
             // 
-            this.agencyBindingSource.DataSource = typeof(QuanLyDuLich_Library.Models.Agency);
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            // 
-            // amountDataGridViewTextBoxColumn
-            // 
-            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
-            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
-            // 
-            // likesDataGridViewTextBoxColumn
-            // 
-            this.likesDataGridViewTextBoxColumn.DataPropertyName = "Likes";
-            this.likesDataGridViewTextBoxColumn.HeaderText = "Likes";
-            this.likesDataGridViewTextBoxColumn.Name = "likesDataGridViewTextBoxColumn";
-            // 
-            // imageDataGridViewImageColumn
-            // 
-            this.imageDataGridViewImageColumn.DataPropertyName = "Image";
-            this.imageDataGridViewImageColumn.HeaderText = "Image";
-            this.imageDataGridViewImageColumn.Name = "imageDataGridViewImageColumn";
+            this.Rate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Rate.Image = ((System.Drawing.Image)(resources.GetObject("Rate.Image")));
+            this.Rate.Location = new System.Drawing.Point(667, 105);
+            this.Rate.Margin = new System.Windows.Forms.Padding(2);
+            this.Rate.Name = "Rate";
+            this.Rate.Size = new System.Drawing.Size(36, 27);
+            this.Rate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Rate.TabIndex = 36;
+            this.Rate.TabStop = false;
             // 
             // label22
             // 
@@ -537,110 +516,176 @@
             this.label15.Text = "Search by name:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Undo_Butt
+            // AgencyView
             // 
-            this.Undo_Butt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Undo_Butt.Image = ((System.Drawing.Image)(resources.GetObject("Undo_Butt.Image")));
-            this.Undo_Butt.Location = new System.Drawing.Point(629, 201);
-            this.Undo_Butt.Margin = new System.Windows.Forms.Padding(2);
-            this.Undo_Butt.Name = "Undo_Butt";
-            this.Undo_Butt.Size = new System.Drawing.Size(34, 31);
-            this.Undo_Butt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Undo_Butt.TabIndex = 39;
-            this.Undo_Butt.TabStop = false;
+            this.AgencyView.AutoGenerateColumns = false;
+            this.AgencyView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AgencyView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nameDataGridViewTextBoxColumn,
+            this.descriptionDataGridViewTextBoxColumn,
+            this.amountDataGridViewTextBoxColumn,
+            this.likesDataGridViewTextBoxColumn,
+            this.imageDataGridViewImageColumn});
+            this.AgencyView.DataSource = this.agencyBindingSource;
+            this.AgencyView.Location = new System.Drawing.Point(9, 25);
+            this.AgencyView.Name = "AgencyView";
+            this.AgencyView.Size = new System.Drawing.Size(544, 353);
+            this.AgencyView.TabIndex = 6;
             // 
-            // Question
+            // nameDataGridViewTextBoxColumn
             // 
-            this.Question.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Question.Image = ((System.Drawing.Image)(resources.GetObject("Question.Image")));
-            this.Question.Location = new System.Drawing.Point(805, 5);
-            this.Question.Margin = new System.Windows.Forms.Padding(2);
-            this.Question.Name = "Question";
-            this.Question.Size = new System.Drawing.Size(27, 17);
-            this.Question.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Question.TabIndex = 38;
-            this.Question.TabStop = false;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             // 
-            // Unrate
+            // descriptionDataGridViewTextBoxColumn
             // 
-            this.Unrate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Unrate.Image = ((System.Drawing.Image)(resources.GetObject("Unrate.Image")));
-            this.Unrate.Location = new System.Drawing.Point(683, 148);
-            this.Unrate.Margin = new System.Windows.Forms.Padding(2);
-            this.Unrate.Name = "Unrate";
-            this.Unrate.Size = new System.Drawing.Size(39, 30);
-            this.Unrate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Unrate.TabIndex = 37;
-            this.Unrate.TabStop = false;
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             // 
-            // Rate
+            // amountDataGridViewTextBoxColumn
             // 
-            this.Rate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Rate.Image = ((System.Drawing.Image)(resources.GetObject("Rate.Image")));
-            this.Rate.Location = new System.Drawing.Point(667, 105);
-            this.Rate.Margin = new System.Windows.Forms.Padding(2);
-            this.Rate.Name = "Rate";
-            this.Rate.Size = new System.Drawing.Size(36, 27);
-            this.Rate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Rate.TabIndex = 36;
-            this.Rate.TabStop = false;
+            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
+            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
+            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
             // 
-            // NameForSearch
+            // likesDataGridViewTextBoxColumn
             // 
-            this.NameForSearch.Location = new System.Drawing.Point(683, 41);
-            this.NameForSearch.Name = "NameForSearch";
-            this.NameForSearch.Size = new System.Drawing.Size(148, 20);
-            this.NameForSearch.TabIndex = 40;
+            this.likesDataGridViewTextBoxColumn.DataPropertyName = "Likes";
+            this.likesDataGridViewTextBoxColumn.HeaderText = "Likes";
+            this.likesDataGridViewTextBoxColumn.Name = "likesDataGridViewTextBoxColumn";
             // 
-            // dataGridView1
+            // imageDataGridViewImageColumn
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.agencyNameDataGridViewTextBoxColumn,
-            this.tripDataGridViewTextBoxColumn,
-            this.onSaleDataGridViewTextBoxColumn,
-            this.amountDataGridViewTextBoxColumn1,
-            this.priceTripDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.portionBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(540, 378);
-            this.dataGridView1.TabIndex = 0;
+            this.imageDataGridViewImageColumn.DataPropertyName = "Image";
+            this.imageDataGridViewImageColumn.HeaderText = "Image";
+            this.imageDataGridViewImageColumn.Name = "imageDataGridViewImageColumn";
             // 
-            // portionBindingSource
+            // agencyBindingSource
             // 
-            this.portionBindingSource.DataSource = typeof(QuanLyDuLich_Library.Models.Portion);
+            this.agencyBindingSource.DataSource = typeof(QuanLyDuLich_Library.Models.Agency);
             // 
-            // agencyNameDataGridViewTextBoxColumn
+            // label14
             // 
-            this.agencyNameDataGridViewTextBoxColumn.DataPropertyName = "Agency_Name";
-            this.agencyNameDataGridViewTextBoxColumn.HeaderText = "Agency_Name";
-            this.agencyNameDataGridViewTextBoxColumn.Name = "agencyNameDataGridViewTextBoxColumn";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label14.Location = new System.Drawing.Point(5, 3);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(196, 19);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Here is your Agencies` List:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // tripDataGridViewTextBoxColumn
+            // TripPage
             // 
-            this.tripDataGridViewTextBoxColumn.DataPropertyName = "Trip";
-            this.tripDataGridViewTextBoxColumn.HeaderText = "Trip";
-            this.tripDataGridViewTextBoxColumn.Name = "tripDataGridViewTextBoxColumn";
+            this.TripPage.Controls.Add(this.UndoButtForTrips);
+            this.TripPage.Controls.Add(this.pictureBox5);
+            this.TripPage.Controls.Add(this.BiggerPrice);
+            this.TripPage.Controls.Add(this.LessPrice);
+            this.TripPage.Controls.Add(this.less);
+            this.TripPage.Controls.Add(this.LocationsForClient);
+            this.TripPage.Controls.Add(this.More_Butt);
+            this.TripPage.Controls.Add(this.label21);
+            this.TripPage.Controls.Add(this.label20);
+            this.TripPage.Controls.Add(this.label19);
+            this.TripPage.Controls.Add(this.label18);
+            this.TripPage.Controls.Add(this.TripClientGridView);
+            this.TripPage.Location = new System.Drawing.Point(4, 22);
+            this.TripPage.Name = "TripPage";
+            this.TripPage.Padding = new System.Windows.Forms.Padding(3);
+            this.TripPage.Size = new System.Drawing.Size(837, 384);
+            this.TripPage.TabIndex = 2;
+            this.TripPage.Text = "Trip";
+            this.TripPage.UseVisualStyleBackColor = true;
             // 
-            // onSaleDataGridViewTextBoxColumn
+            // pictureBox5
             // 
-            this.onSaleDataGridViewTextBoxColumn.DataPropertyName = "OnSale";
-            this.onSaleDataGridViewTextBoxColumn.HeaderText = "OnSale";
-            this.onSaleDataGridViewTextBoxColumn.Name = "onSaleDataGridViewTextBoxColumn";
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(798, 5);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(34, 24);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 50;
+            this.pictureBox5.TabStop = false;
             // 
-            // amountDataGridViewTextBoxColumn1
+            // BiggerPrice
             // 
-            this.amountDataGridViewTextBoxColumn1.DataPropertyName = "Amount";
-            this.amountDataGridViewTextBoxColumn1.HeaderText = "Amount";
-            this.amountDataGridViewTextBoxColumn1.Name = "amountDataGridViewTextBoxColumn1";
+            this.BiggerPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BiggerPrice.Image = ((System.Drawing.Image)(resources.GetObject("BiggerPrice.Image")));
+            this.BiggerPrice.Location = new System.Drawing.Point(726, 103);
+            this.BiggerPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.BiggerPrice.Name = "BiggerPrice";
+            this.BiggerPrice.Size = new System.Drawing.Size(44, 34);
+            this.BiggerPrice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BiggerPrice.TabIndex = 49;
+            this.BiggerPrice.TabStop = false;
+            this.BiggerPrice.Click += new System.EventHandler(this.BiggerPrice_Click);
             // 
-            // priceTripDataGridViewTextBoxColumn
+            // LessPrice
             // 
-            this.priceTripDataGridViewTextBoxColumn.DataPropertyName = "Price_Trip";
-            this.priceTripDataGridViewTextBoxColumn.HeaderText = "Price_Trip";
-            this.priceTripDataGridViewTextBoxColumn.Name = "priceTripDataGridViewTextBoxColumn";
+            this.LessPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LessPrice.Image = ((System.Drawing.Image)(resources.GetObject("LessPrice.Image")));
+            this.LessPrice.Location = new System.Drawing.Point(645, 103);
+            this.LessPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.LessPrice.Name = "LessPrice";
+            this.LessPrice.Size = new System.Drawing.Size(44, 34);
+            this.LessPrice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LessPrice.TabIndex = 48;
+            this.LessPrice.TabStop = false;
+            this.LessPrice.Click += new System.EventHandler(this.LessPrice_Click);
+            // 
+            // less
+            // 
+            this.less.AccessibleName = "";
+            this.less.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.less.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.less.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.less.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.less.Font = new System.Drawing.Font("Corbel", 13.8F, System.Drawing.FontStyle.Bold);
+            this.less.ForeColor = System.Drawing.Color.Wheat;
+            this.less.Location = new System.Drawing.Point(750, 220);
+            this.less.Name = "less";
+            this.less.Size = new System.Drawing.Size(81, 28);
+            this.less.TabIndex = 47;
+            this.less.Text = "Less";
+            this.less.UseVisualStyleBackColor = false;
+            this.less.Click += new System.EventHandler(this.less_Click);
+            // 
+            // LocationsForClient
+            // 
+            this.LocationsForClient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LocationsForClient.BackColor = System.Drawing.Color.White;
+            this.LocationsForClient.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LocationsForClient.Location = new System.Drawing.Point(627, 167);
+            this.LocationsForClient.Margin = new System.Windows.Forms.Padding(2);
+            this.LocationsForClient.Name = "LocationsForClient";
+            this.LocationsForClient.ReadOnly = true;
+            this.LocationsForClient.Size = new System.Drawing.Size(205, 22);
+            this.LocationsForClient.TabIndex = 39;
+            this.LocationsForClient.Text = "Choose your place";
+            // 
+            // More_Butt
+            // 
+            this.More_Butt.AccessibleName = "";
+            this.More_Butt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.More_Butt.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.More_Butt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.More_Butt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.More_Butt.Font = new System.Drawing.Font("Corbel", 13.8F, System.Drawing.FontStyle.Bold);
+            this.More_Butt.ForeColor = System.Drawing.Color.Wheat;
+            this.More_Butt.Location = new System.Drawing.Point(645, 220);
+            this.More_Butt.Name = "More_Butt";
+            this.More_Butt.Size = new System.Drawing.Size(81, 28);
+            this.More_Butt.TabIndex = 46;
+            this.More_Butt.Text = "More ";
+            this.More_Butt.UseVisualStyleBackColor = false;
+            this.More_Butt.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.More_Butt_ChangeUICues);
             // 
             // label21
             // 
@@ -702,120 +747,243 @@
             this.label18.Text = "-Sort:";
             this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // LocationsForClient
+            // TripClientGridView
             // 
-            this.LocationsForClient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LocationsForClient.BackColor = System.Drawing.Color.White;
-            this.LocationsForClient.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LocationsForClient.Location = new System.Drawing.Point(627, 167);
-            this.LocationsForClient.Margin = new System.Windows.Forms.Padding(2);
-            this.LocationsForClient.Name = "LocationsForClient";
-            this.LocationsForClient.ReadOnly = true;
-            this.LocationsForClient.Size = new System.Drawing.Size(205, 22);
-            this.LocationsForClient.TabIndex = 39;
-            this.LocationsForClient.Text = "Choose your place";
+            this.TripClientGridView.AutoGenerateColumns = false;
+            this.TripClientGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TripClientGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.agencyNameDataGridViewTextBoxColumn,
+            this.tripDataGridViewTextBoxColumn,
+            this.onSaleDataGridViewTextBoxColumn,
+            this.amountDataGridViewTextBoxColumn1,
+            this.priceTripDataGridViewTextBoxColumn});
+            this.TripClientGridView.DataSource = this.portionBindingSource;
+            this.TripClientGridView.Location = new System.Drawing.Point(0, 0);
+            this.TripClientGridView.Name = "TripClientGridView";
+            this.TripClientGridView.Size = new System.Drawing.Size(540, 378);
+            this.TripClientGridView.TabIndex = 0;
             // 
-            // less
+            // agencyNameDataGridViewTextBoxColumn
             // 
-            this.less.AccessibleName = "";
-            this.less.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.less.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.less.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.less.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.less.Font = new System.Drawing.Font("Corbel", 13.8F, System.Drawing.FontStyle.Bold);
-            this.less.ForeColor = System.Drawing.Color.Wheat;
-            this.less.Location = new System.Drawing.Point(750, 220);
-            this.less.Name = "less";
-            this.less.Size = new System.Drawing.Size(81, 28);
-            this.less.TabIndex = 47;
-            this.less.Text = "Less";
-            this.less.UseVisualStyleBackColor = false;
+            this.agencyNameDataGridViewTextBoxColumn.DataPropertyName = "Agency_Name";
+            this.agencyNameDataGridViewTextBoxColumn.HeaderText = "Agency_Name";
+            this.agencyNameDataGridViewTextBoxColumn.Name = "agencyNameDataGridViewTextBoxColumn";
             // 
-            // More_Butt
+            // tripDataGridViewTextBoxColumn
             // 
-            this.More_Butt.AccessibleName = "";
-            this.More_Butt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.More_Butt.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.More_Butt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.More_Butt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.More_Butt.Font = new System.Drawing.Font("Corbel", 13.8F, System.Drawing.FontStyle.Bold);
-            this.More_Butt.ForeColor = System.Drawing.Color.Wheat;
-            this.More_Butt.Location = new System.Drawing.Point(645, 220);
-            this.More_Butt.Name = "More_Butt";
-            this.More_Butt.Size = new System.Drawing.Size(81, 28);
-            this.More_Butt.TabIndex = 46;
-            this.More_Butt.Text = "More ";
-            this.More_Butt.UseVisualStyleBackColor = false;
+            this.tripDataGridViewTextBoxColumn.DataPropertyName = "Trip";
+            this.tripDataGridViewTextBoxColumn.HeaderText = "Trip";
+            this.tripDataGridViewTextBoxColumn.Name = "tripDataGridViewTextBoxColumn";
             // 
-            // BiggerPrice
+            // onSaleDataGridViewTextBoxColumn
             // 
-            this.BiggerPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BiggerPrice.Image = ((System.Drawing.Image)(resources.GetObject("BiggerPrice.Image")));
-            this.BiggerPrice.Location = new System.Drawing.Point(726, 103);
-            this.BiggerPrice.Margin = new System.Windows.Forms.Padding(2);
-            this.BiggerPrice.Name = "BiggerPrice";
-            this.BiggerPrice.Size = new System.Drawing.Size(44, 34);
-            this.BiggerPrice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BiggerPrice.TabIndex = 49;
-            this.BiggerPrice.TabStop = false;
+            this.onSaleDataGridViewTextBoxColumn.DataPropertyName = "OnSale";
+            this.onSaleDataGridViewTextBoxColumn.HeaderText = "OnSale";
+            this.onSaleDataGridViewTextBoxColumn.Name = "onSaleDataGridViewTextBoxColumn";
             // 
-            // LessPrice
+            // amountDataGridViewTextBoxColumn1
             // 
-            this.LessPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LessPrice.Image = ((System.Drawing.Image)(resources.GetObject("LessPrice.Image")));
-            this.LessPrice.Location = new System.Drawing.Point(645, 103);
-            this.LessPrice.Margin = new System.Windows.Forms.Padding(2);
-            this.LessPrice.Name = "LessPrice";
-            this.LessPrice.Size = new System.Drawing.Size(44, 34);
-            this.LessPrice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LessPrice.TabIndex = 48;
-            this.LessPrice.TabStop = false;
+            this.amountDataGridViewTextBoxColumn1.DataPropertyName = "Amount";
+            this.amountDataGridViewTextBoxColumn1.HeaderText = "Amount";
+            this.amountDataGridViewTextBoxColumn1.Name = "amountDataGridViewTextBoxColumn1";
             // 
-            // pictureBox5
+            // priceTripDataGridViewTextBoxColumn
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(798, 5);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(34, 24);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 50;
-            this.pictureBox5.TabStop = false;
+            this.priceTripDataGridViewTextBoxColumn.DataPropertyName = "Price_Trip";
+            this.priceTripDataGridViewTextBoxColumn.HeaderText = "Price_Trip";
+            this.priceTripDataGridViewTextBoxColumn.Name = "priceTripDataGridViewTextBoxColumn";
             // 
-            // label24
+            // portionBindingSource
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
-            this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label24.Location = new System.Drawing.Point(5, 3);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(146, 19);
-            this.label24.TabIndex = 6;
-            this.label24.Text = "Here is your Basket:";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label24.Click += new System.EventHandler(this.label24_Click);
+            this.portionBindingSource.DataSource = typeof(QuanLyDuLich_Library.Models.Portion);
             // 
-            // dataGridView2
+            // OrderPage
             // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.OrderPage.Controls.Add(this.pictureBox3);
+            this.OrderPage.Controls.Add(this.pictureBox2);
+            this.OrderPage.Controls.Add(this.label25);
+            this.OrderPage.Controls.Add(this.pictureBox11);
+            this.OrderPage.Controls.Add(this.pictureBox10);
+            this.OrderPage.Controls.Add(this.pictureBox9);
+            this.OrderPage.Controls.Add(this.pictureBox8);
+            this.OrderPage.Controls.Add(this.Compilation);
+            this.OrderPage.Controls.Add(this.TotalPrice);
+            this.OrderPage.Controls.Add(this.label26);
+            this.OrderPage.Controls.Add(this.pictureBox14);
+            this.OrderPage.Controls.Add(this.DeletePortFromOrder);
+            this.OrderPage.Controls.Add(this.OrderGrid);
+            this.OrderPage.Controls.Add(this.label24);
+            this.OrderPage.Location = new System.Drawing.Point(4, 22);
+            this.OrderPage.Name = "OrderPage";
+            this.OrderPage.Padding = new System.Windows.Forms.Padding(3);
+            this.OrderPage.Size = new System.Drawing.Size(837, 384);
+            this.OrderPage.TabIndex = 3;
+            this.OrderPage.Text = "Your Orders";
+            this.OrderPage.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(550, 237);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 57;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(682, 237);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 56;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label25
+            // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Corbel", 14F, System.Drawing.FontStyle.Bold);
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label25.Location = new System.Drawing.Point(574, 49);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(206, 23);
+            this.label25.TabIndex = 55;
+            this.label25.Text = "You can  use such cards:";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(682, 164);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(101, 55);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 54;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(682, 91);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(98, 58);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 53;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(550, 91);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(98, 58);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 52;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(541, 164);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(116, 55);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 51;
+            this.pictureBox8.TabStop = false;
+            // 
+            // Compilation
+            // 
+            this.Compilation.AccessibleName = "";
+            this.Compilation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Compilation.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Compilation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Compilation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Compilation.Font = new System.Drawing.Font("Corbel", 13.8F, System.Drawing.FontStyle.Bold);
+            this.Compilation.ForeColor = System.Drawing.Color.White;
+            this.Compilation.Location = new System.Drawing.Point(396, 342);
+            this.Compilation.Name = "Compilation";
+            this.Compilation.Size = new System.Drawing.Size(109, 36);
+            this.Compilation.TabIndex = 50;
+            this.Compilation.Text = "Complete Order!";
+            this.Compilation.UseVisualStyleBackColor = false;
+            // 
+            // TotalPrice
+            // 
+            this.TotalPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.TotalPrice.BackColor = System.Drawing.Color.Wheat;
+            this.TotalPrice.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.TotalPrice.Location = new System.Drawing.Point(123, 281);
+            this.TotalPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.TotalPrice.Multiline = true;
+            this.TotalPrice.Name = "TotalPrice";
+            this.TotalPrice.ReadOnly = true;
+            this.TotalPrice.Size = new System.Drawing.Size(190, 26);
+            this.TotalPrice.TabIndex = 49;
+            // 
+            // label26
+            // 
+            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Corbel", 14F, System.Drawing.FontStyle.Bold);
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label26.Location = new System.Drawing.Point(1, 281);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(118, 23);
+            this.label26.TabIndex = 48;
+            this.label26.Text = "Total Price $:";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(792, 5);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(43, 27);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 47;
+            this.pictureBox14.TabStop = false;
+            // 
+            // DeletePortFromOrder
+            // 
+            this.DeletePortFromOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DeletePortFromOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeletePortFromOrder.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
+            this.DeletePortFromOrder.ForeColor = System.Drawing.Color.Black;
+            this.DeletePortFromOrder.Location = new System.Drawing.Point(396, 5);
+            this.DeletePortFromOrder.Margin = new System.Windows.Forms.Padding(2);
+            this.DeletePortFromOrder.Name = "DeletePortFromOrder";
+            this.DeletePortFromOrder.Size = new System.Drawing.Size(76, 27);
+            this.DeletePortFromOrder.TabIndex = 46;
+            this.DeletePortFromOrder.Text = "Delete";
+            this.DeletePortFromOrder.UseVisualStyleBackColor = false;
+            // 
+            // OrderGrid
+            // 
+            this.OrderGrid.AutoGenerateColumns = false;
+            this.OrderGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.OrderGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.agencyNameDataGridViewTextBoxColumn1,
             this.locationTripDataGridViewTextBoxColumn,
             this.priceTripDataGridViewTextBoxColumn1,
             this.amountDataGridViewTextBoxColumn2});
-            this.dataGridView2.DataSource = this.portionBindingSource1;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 53);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(442, 325);
-            this.dataGridView2.TabIndex = 7;
-            // 
-            // portionBindingSource1
-            // 
-            this.portionBindingSource1.DataSource = typeof(QuanLyDuLich_Library.Models.Portion);
+            this.OrderGrid.DataSource = this.portionBindingSource1;
+            this.OrderGrid.Location = new System.Drawing.Point(6, 37);
+            this.OrderGrid.Name = "OrderGrid";
+            this.OrderGrid.Size = new System.Drawing.Size(442, 241);
+            this.OrderGrid.TabIndex = 7;
             // 
             // agencyNameDataGridViewTextBoxColumn1
             // 
@@ -841,19 +1009,37 @@
             this.amountDataGridViewTextBoxColumn2.HeaderText = "Amount";
             this.amountDataGridViewTextBoxColumn2.Name = "amountDataGridViewTextBoxColumn2";
             // 
-            // DeletePortFromOrder
+            // portionBindingSource1
             // 
-            this.DeletePortFromOrder.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.DeletePortFromOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeletePortFromOrder.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DeletePortFromOrder.ForeColor = System.Drawing.Color.Wheat;
-            this.DeletePortFromOrder.Location = new System.Drawing.Point(396, 5);
-            this.DeletePortFromOrder.Margin = new System.Windows.Forms.Padding(2);
-            this.DeletePortFromOrder.Name = "DeletePortFromOrder";
-            this.DeletePortFromOrder.Size = new System.Drawing.Size(76, 27);
-            this.DeletePortFromOrder.TabIndex = 46;
-            this.DeletePortFromOrder.Text = "Delete";
-            this.DeletePortFromOrder.UseVisualStyleBackColor = false;
+            this.portionBindingSource1.DataSource = typeof(QuanLyDuLich_Library.Models.Portion);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label24.Location = new System.Drawing.Point(5, 3);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(146, 19);
+            this.label24.TabIndex = 6;
+            this.label24.Text = "Here is your Basket:";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label24.Click += new System.EventHandler(this.label24_Click);
+            // 
+            // UndoButtForTrips
+            // 
+            this.UndoButtForTrips.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.UndoButtForTrips.Image = ((System.Drawing.Image)(resources.GetObject("UndoButtForTrips.Image")));
+            this.UndoButtForTrips.Location = new System.Drawing.Point(670, 301);
+            this.UndoButtForTrips.Margin = new System.Windows.Forms.Padding(2);
+            this.UndoButtForTrips.Name = "UndoButtForTrips";
+            this.UndoButtForTrips.Size = new System.Drawing.Size(56, 35);
+            this.UndoButtForTrips.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.UndoButtForTrips.TabIndex = 51;
+            this.UndoButtForTrips.TabStop = false;
+            this.UndoButtForTrips.Click += new System.EventHandler(this.UndoButtForTrips_Click);
             // 
             // MainClient
             // 
@@ -868,26 +1054,34 @@
             this.tabControl1.ResumeLayout(false);
             this.HelloPage.ResumeLayout(false);
             this.HelloPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.AgencyPage.ResumeLayout(false);
             this.AgencyPage.PerformLayout();
-            this.TripPage.ResumeLayout(false);
-            this.TripPage.PerformLayout();
-            this.OrderPage.ResumeLayout(false);
-            this.OrderPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AgencyView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agencyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Undo_Butt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Question)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Unrate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgencyView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agencyBindingSource)).EndInit();
+            this.TripPage.ResumeLayout(false);
+            this.TripPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BiggerPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LessPrice)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TripClientGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portionBindingSource)).EndInit();
+            this.OrderPage.ResumeLayout(false);
+            this.OrderPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portionBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UndoButtForTrips)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -935,7 +1129,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView TripClientGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn agencyNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tripDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn onSaleDataGridViewTextBoxColumn;
@@ -949,11 +1143,23 @@
         private System.Windows.Forms.Button More_Butt;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button DeletePortFromOrder;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView OrderGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn agencyNameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn locationTripDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceTripDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn2;
         private System.Windows.Forms.BindingSource portionBindingSource1;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button Compilation;
+        private System.Windows.Forms.TextBox TotalPrice;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox UndoButtForTrips;
     }
 }
