@@ -65,6 +65,7 @@
             this.agencyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label14 = new System.Windows.Forms.Label();
             this.TripPage = new System.Windows.Forms.TabPage();
+            this.UndoButtForTrips = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.BiggerPrice = new System.Windows.Forms.PictureBox();
             this.LessPrice = new System.Windows.Forms.PictureBox();
@@ -102,7 +103,6 @@
             this.amountDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.portionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label24 = new System.Windows.Forms.Label();
-            this.UndoButtForTrips = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.HelloPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -114,6 +114,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.AgencyView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agencyBindingSource)).BeginInit();
             this.TripPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UndoButtForTrips)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BiggerPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LessPrice)).BeginInit();
@@ -129,7 +130,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OrderGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portionBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UndoButtForTrips)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -531,6 +531,7 @@
             this.AgencyView.Name = "AgencyView";
             this.AgencyView.Size = new System.Drawing.Size(544, 353);
             this.AgencyView.TabIndex = 6;
+            this.AgencyView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AgencyView_CellClick);
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -602,6 +603,19 @@
             this.TripPage.Text = "Trip";
             this.TripPage.UseVisualStyleBackColor = true;
             // 
+            // UndoButtForTrips
+            // 
+            this.UndoButtForTrips.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.UndoButtForTrips.Image = ((System.Drawing.Image)(resources.GetObject("UndoButtForTrips.Image")));
+            this.UndoButtForTrips.Location = new System.Drawing.Point(670, 301);
+            this.UndoButtForTrips.Margin = new System.Windows.Forms.Padding(2);
+            this.UndoButtForTrips.Name = "UndoButtForTrips";
+            this.UndoButtForTrips.Size = new System.Drawing.Size(56, 35);
+            this.UndoButtForTrips.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.UndoButtForTrips.TabIndex = 51;
+            this.UndoButtForTrips.TabStop = false;
+            this.UndoButtForTrips.Click += new System.EventHandler(this.UndoButtForTrips_Click);
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -613,6 +627,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 50;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.MouseHover += new System.EventHandler(this.pictureBox5_MouseHover);
             // 
             // BiggerPrice
             // 
@@ -669,6 +684,7 @@
             this.LocationsForClient.Size = new System.Drawing.Size(205, 22);
             this.LocationsForClient.TabIndex = 39;
             this.LocationsForClient.Text = "Choose your place";
+            this.LocationsForClient.SelectedItemChanged += new System.EventHandler(this.LocationsForClient_SelectedItemChanged);
             // 
             // More_Butt
             // 
@@ -739,13 +755,14 @@
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label18.Location = new System.Drawing.Point(545, 69);
+            this.label18.Location = new System.Drawing.Point(683, 42);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(48, 20);
+            this.label18.Size = new System.Drawing.Size(43, 20);
             this.label18.TabIndex = 35;
-            this.label18.Text = "-Sort:";
+            this.label18.Text = "Sort:";
             this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // TripClientGridView
             // 
@@ -762,6 +779,7 @@
             this.TripClientGridView.Name = "TripClientGridView";
             this.TripClientGridView.Size = new System.Drawing.Size(540, 378);
             this.TripClientGridView.TabIndex = 0;
+            this.TripClientGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TripClientGridView_CellClick);
             // 
             // agencyNameDataGridViewTextBoxColumn
             // 
@@ -830,6 +848,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 57;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -840,6 +859,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 56;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label25
             // 
@@ -866,6 +886,7 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 54;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox10
             // 
@@ -877,6 +898,7 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 53;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox9
             // 
@@ -900,6 +922,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 51;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // Compilation
             // 
@@ -916,6 +939,7 @@
             this.Compilation.TabIndex = 50;
             this.Compilation.Text = "Complete Order!";
             this.Compilation.UseVisualStyleBackColor = false;
+            this.Compilation.Click += new System.EventHandler(this.Compilation_Click);
             // 
             // TotalPrice
             // 
@@ -955,6 +979,7 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 47;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.MouseHover += new System.EventHandler(this.pictureBox14_MouseHover);
             // 
             // DeletePortFromOrder
             // 
@@ -969,6 +994,7 @@
             this.DeletePortFromOrder.TabIndex = 46;
             this.DeletePortFromOrder.Text = "Delete";
             this.DeletePortFromOrder.UseVisualStyleBackColor = false;
+            this.DeletePortFromOrder.Click += new System.EventHandler(this.DeletePortFromOrder_Click);
             // 
             // OrderGrid
             // 
@@ -1028,19 +1054,6 @@
             this.label24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
-            // UndoButtForTrips
-            // 
-            this.UndoButtForTrips.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UndoButtForTrips.Image = ((System.Drawing.Image)(resources.GetObject("UndoButtForTrips.Image")));
-            this.UndoButtForTrips.Location = new System.Drawing.Point(670, 301);
-            this.UndoButtForTrips.Margin = new System.Windows.Forms.Padding(2);
-            this.UndoButtForTrips.Name = "UndoButtForTrips";
-            this.UndoButtForTrips.Size = new System.Drawing.Size(56, 35);
-            this.UndoButtForTrips.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.UndoButtForTrips.TabIndex = 51;
-            this.UndoButtForTrips.TabStop = false;
-            this.UndoButtForTrips.Click += new System.EventHandler(this.UndoButtForTrips_Click);
-            // 
             // MainClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1050,6 +1063,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainClient";
             this.Text = "Main Client";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainClient_FormClosing);
             this.Load += new System.EventHandler(this.MainClient_Load);
             this.tabControl1.ResumeLayout(false);
             this.HelloPage.ResumeLayout(false);
@@ -1065,6 +1079,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.agencyBindingSource)).EndInit();
             this.TripPage.ResumeLayout(false);
             this.TripPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UndoButtForTrips)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BiggerPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LessPrice)).EndInit();
@@ -1081,7 +1096,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OrderGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portionBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UndoButtForTrips)).EndInit();
             this.ResumeLayout(false);
 
         }
