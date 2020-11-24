@@ -33,12 +33,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.portionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.agencyNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.locationTripDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.onSaleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceTripDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.portionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -98,10 +98,6 @@
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // portionBindingSource
-            // 
-            this.portionBindingSource.DataSource = typeof(QuanLyDuLich_Library.Models.Portion);
-            // 
             // agencyNameDataGridViewTextBoxColumn
             // 
             this.agencyNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -133,6 +129,10 @@
             this.priceTripDataGridViewTextBoxColumn.DataPropertyName = "Price_Trip";
             this.priceTripDataGridViewTextBoxColumn.HeaderText = "Giá Tiền";
             this.priceTripDataGridViewTextBoxColumn.Name = "priceTripDataGridViewTextBoxColumn";
+            // 
+            // portionBindingSource
+            // 
+            this.portionBindingSource.DataSource = typeof(QuanLyDuLich_Library.Models.Portion);
             // 
             // label3
             // 

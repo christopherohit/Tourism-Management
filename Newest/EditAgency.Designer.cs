@@ -36,9 +36,6 @@
             this.EditTrip = new System.Windows.Forms.Button();
             this.DeleteTrip = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.locationTripDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceTripDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.portionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SaveAgency = new System.Windows.Forms.Button();
             this.SendButton = new System.Windows.Forms.Button();
@@ -50,6 +47,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.CancelSaving = new System.Windows.Forms.Button();
+            this.Agency_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.locationTripDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceTripDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -115,35 +116,16 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Agency_Name,
             this.locationTripDataGridViewTextBoxColumn,
             this.amountDataGridViewTextBoxColumn,
             this.priceTripDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.portionBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 145);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(374, 156);
+            this.dataGridView1.Size = new System.Drawing.Size(427, 156);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // locationTripDataGridViewTextBoxColumn
-            // 
-            this.locationTripDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.locationTripDataGridViewTextBoxColumn.DataPropertyName = "Location_Trip";
-            this.locationTripDataGridViewTextBoxColumn.HeaderText = "Location Of Trip";
-            this.locationTripDataGridViewTextBoxColumn.Name = "locationTripDataGridViewTextBoxColumn";
-            // 
-            // amountDataGridViewTextBoxColumn
-            // 
-            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
-            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
-            // 
-            // priceTripDataGridViewTextBoxColumn
-            // 
-            this.priceTripDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.priceTripDataGridViewTextBoxColumn.DataPropertyName = "Price_Trip";
-            this.priceTripDataGridViewTextBoxColumn.HeaderText = "Price Of Trip";
-            this.priceTripDataGridViewTextBoxColumn.Name = "priceTripDataGridViewTextBoxColumn";
             // 
             // portionBindingSource
             // 
@@ -248,6 +230,32 @@
             this.CancelSaving.UseVisualStyleBackColor = true;
             this.CancelSaving.Click += new System.EventHandler(this.CancelSaving_Click);
             // 
+            // Agency_Name
+            // 
+            this.Agency_Name.DataPropertyName = "Agency_Name";
+            this.Agency_Name.HeaderText = "Tên Đại Lý";
+            this.Agency_Name.Name = "Agency_Name";
+            // 
+            // locationTripDataGridViewTextBoxColumn
+            // 
+            this.locationTripDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.locationTripDataGridViewTextBoxColumn.DataPropertyName = "Location_Trip";
+            this.locationTripDataGridViewTextBoxColumn.HeaderText = "Địa Điểm";
+            this.locationTripDataGridViewTextBoxColumn.Name = "locationTripDataGridViewTextBoxColumn";
+            // 
+            // amountDataGridViewTextBoxColumn
+            // 
+            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
+            this.amountDataGridViewTextBoxColumn.HeaderText = "Số Lượng";
+            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
+            // 
+            // priceTripDataGridViewTextBoxColumn
+            // 
+            this.priceTripDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.priceTripDataGridViewTextBoxColumn.DataPropertyName = "Price_Trip";
+            this.priceTripDataGridViewTextBoxColumn.HeaderText = "Giá Tiền";
+            this.priceTripDataGridViewTextBoxColumn.Name = "priceTripDataGridViewTextBoxColumn";
+            // 
             // EditAgency
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,9 +302,6 @@
         private System.Windows.Forms.Button EditTrip;
         private System.Windows.Forms.Button DeleteTrip;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn locationTripDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn priceTripDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource portionBindingSource;
         private System.Windows.Forms.Button SaveAgency;
         private System.Windows.Forms.Button SendButton;
@@ -308,5 +313,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button CancelSaving;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Agency_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn locationTripDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceTripDataGridViewTextBoxColumn;
     }
 }

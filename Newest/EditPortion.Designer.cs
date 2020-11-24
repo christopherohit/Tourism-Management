@@ -238,7 +238,7 @@
             this.LocationTrip.Name = "LocationTrip";
             this.LocationTrip.Size = new System.Drawing.Size(134, 20);
             this.LocationTrip.TabIndex = 10;
-            this.LocationTrip.Text = "domainUpDown1";
+            this.LocationTrip.Text = "None";
             // 
             // OnSaleFuture
             // 
@@ -246,7 +246,7 @@
             this.OnSaleFuture.Name = "OnSaleFuture";
             this.OnSaleFuture.Size = new System.Drawing.Size(134, 20);
             this.OnSaleFuture.TabIndex = 10;
-            this.OnSaleFuture.Text = "domainUpDown1";
+            this.OnSaleFuture.Text = "None";
             // 
             // openFileDialog1
             // 
