@@ -39,7 +39,7 @@ namespace Newest
 
 
             //Them Danh Sach
-            LocationTrip.Items.AddRange(diadiem);
+            LocationTrip.Items.AddRange(diadiem); 
             OnSaleFuture.Items.AddRange(tinhtrang);
             AmountOfTrip.Maximum = 30;
             AmountOfTrip.Minimum = 0;
